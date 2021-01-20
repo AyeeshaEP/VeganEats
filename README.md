@@ -6,19 +6,18 @@
 
 ## Project Description
 
-Vegan Eats is an Airtable and React builder where the user is able to search through vegan friendly restaurants in Oakland, CA. Users are able to view different categories of food and read reviews on  the restaurants. They are also able to add restaurants as well as add reviews. 
+Vegan Eats is an Airtable and React builder where the user is able to search through vegan friendly restaurants in Oakland, CA. Users are able to view different categories of food and read reviews on  the restaurants. 
 
 ## Wireframes
 
 
 ##### Homepage Wireframe
-![Wireframe](./assets/homePage.png)
+![Wireframe](./assets/homepage.png)
 
-##### Add Feedback Wirefram
-![Wireframe](./assets/addFeedback.png)
+##### Show Page Wireframe
+![Wireframe](./assets/showpage.png)
 
-##### View Eateries Wireframe
-![Wireframe](./assets/viewEateries.png)
+
 
 ## Component Hierarchy
 
