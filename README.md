@@ -11,10 +11,10 @@ Vegan Eats is an Airtable and React builder where the user is able to search thr
 ## Wireframes
 
 
-##### Homepage Wireframe
+##### Homepage Wireframe Mobile and Desktop
 ![Wireframe](./assets/homePage.png)
 
-##### Show Page Wireframe
+##### Show Page Wireframe Mobile and Desktop
 ![Wireframe](./assets/showPage.png)
 
 
@@ -34,29 +34,24 @@ Below is  a sample of Airtable returning the data for this base:
         {
             "id": "recxkf0ZrlhkezjvZ",
             "fields": {
-                "Eatery": "Souley Vegan",
-                 "Style": "Soul Food"
-                },
+                "eatery": "Souley Vegan",
+                "description": "SOOO delicious!",
+                "style": "Soul Food",
+                "imageURL": "https://images.happycow.net/venues/1024/18/10/hcmp18109_554187.jpeg"
+            },
             "createdTime": "2021-01-19T16:29:20.000Z"
         },
         {
             "id": "rec7EdztXkBLmkRI2",
             "fields": {
-                "Eatery": "Two Mamas' Vegan Kitchen",
-                "Style": "Comfort Food"
-            },
-            "createdTime": "2021-01-19T16:29:20.000Z"
-        },
-        {
-            "id": "rectVCez6XU2JLcJ5",
-            "fields": {
-                "Eatery": "The Veg Hub",
-                "Style": "California Style"
+                "eatery": "Two Mamas' Vegan Kitchen",
+                "style": "Comfort Food",
+                "imageURL": "https://images.happycow.net/venues/1024/46/82/hcmp46820_683485.jpeg",
+                "description": "Warming and delicious!"
             },
             "createdTime": "2021-01-19T16:29:20.000Z"
         }
-    ],
-    "offset": "rectVCez6XU2JLcJ5"
+    ]
 }
 
 ```
@@ -67,13 +62,19 @@ Below is  a sample of Airtable returning the data for this base:
 
 #### MVP 
 
-- Utilize Airtable to supply data
-- Render data on page 
-- Add and delete posts from Airtable
+- Utilize React Router, installed via NPM.
+- Have at least 6 seperate, rendered components.
+- Implement an organized and understandable React file structure.
+- Utilize functional and class Reach components appropriately.
+- Use Axious to consume data from Airtable, and GET/render that data in your components.
+- Use Axios to POST/create new data on Airtable.
+- Use ONLY react for DOM Manipulation.
+
+
 
 #### PostMVP  
 
-- Allow users to add to posts on Airtable
+- Allow users to add to posts on Airtable.
 
 ## Project Schedule
 
