@@ -12,10 +12,10 @@ Vegan Eats is an Airtable and React builder where the user is able to search thr
 
 
 ##### Homepage Wireframe
-![Wireframe](./assets/homepage.png)
+![Wireframe](./assets/homePage.png)
 
 ##### Show Page Wireframe
-![Wireframe](./assets/showpage.png)
+![Wireframe](./assets/showPage.png)
 
 
 
