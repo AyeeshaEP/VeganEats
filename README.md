@@ -17,6 +17,9 @@ Vegan Eats is an Airtable and React builder where the user is able to search thr
 ##### Show Page Wireframe Mobile and Desktop
 ![Wireframe](./assets/showPage.png)
 
+##### Enter Content Page Wireframe Mobile and Desktop
+![Wireframe](./assets/showPage.png)
+
 
 
 ## Component Hierarchy
@@ -61,20 +64,17 @@ Below is  a sample of Airtable returning the data for this base:
 
 
 #### MVP 
-
-- Utilize React Router, installed via NPM.
-- Have at least 6 seperate, rendered components.
-- Implement an organized and understandable React file structure.
+- Allow users to get and post vegan eateries in Oakland, CA and leave feedback.
+- Utilize React Router
 - Utilize functional and class Reach components appropriately.
 - Use Axious to consume data from Airtable, and GET/render that data in your components.
-- Use Axios to POST/create new data on Airtable.
-- Use ONLY react for DOM Manipulation.
+
 
 
 
 #### PostMVP  
 
-- Allow users to add to posts on Airtable.
+- Allow users to add ratings.
 
 ## Project Schedule
 
@@ -82,7 +82,7 @@ Below is  a sample of Airtable returning the data for this base:
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|January 20| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|January 20| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
 |January 21| Project Approval | Incomplete
 |January 23| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |January 24| Pseudocode / actual code | Incomplete
