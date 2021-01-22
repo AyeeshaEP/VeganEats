@@ -1,0 +1,109 @@
+body {
+  background-image:url("https://images.unsplash.com/photo-1471286274405-579f8d7132d8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+ 
+  
+  
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+  margin: 20px;
+  width: 100vw;
+  ;
+}
+
+nav a,
+main a {
+  text-decoration: none;
+  transition: all 0.2s;
+  font-family: "playfair Display";
+  font-weight: 900;
+  color: #1c1111;
+
+}
+
+nav a:hover,
+main a:hover {
+  text-shadow: 3px 3px 6px #D9F3D9;
+}
+
+main,
+form {
+  width: 50vw;
+  min-width: 275px;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form label, 
+form input, 
+form button {
+  margin: 5px 0;
+  font-family: "Montserrat";
+}
+
+form input:focus, 
+form button:focus {
+  outline: 1px solid #35352e;
+}
+
+form h4 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-style: italic;
+  color: #35352e;
+  justify-content: center;
+} 
+
+form label {
+  color: #1c1111;
+  font-weight: 600;
+  /* text-shadow: 3px 3px 6px #E929BA; */
+}
+
+form input{
+  font-weight: 600;
+  background-color: #D9F3D9;
+  color: #35352e;
+  transition: all 0.2s;
+  border-radius: 18px;
+  padding: 20px; 
+  width: 200px;
+  height: 15px;   
+}
+
+form button:hover {
+  display: flex;
+  justify-content: center;
+  color: #35352e;
+  background-color: #D9F3D9;
+  
+}
+
+.eatery h4 {
+  font-family: "Playfair Display";
+  color:#35352e;
+  margin: 5px;
+  padding: 0;
+}
+
+.eatery h4 {
+  display:flex;
+  justify-content: center;
+  font-size: 36px;
+}
+
+.eatery h5 {
+  font-size: 16px;
+}
+
+.eatery h5 em:before {
+  content: "- "; 
+}
