@@ -22,15 +22,17 @@ function Eatery(props) {
     feedback += ""
   }
     
-
+ console.log(eatery)
   return (
     <div>
-      <h4>{eatery.fields.name}</h4>
+      <h4>{eatery.fields.eatery}</h4>
       <h5>
-        <em>{eatery.fields.author}</em>
+        <em>{eatery.fields.style}</em>
       </h5>
-      <p>{eatery.fields.rating}</p>
+      <p>{eatery.fields.description}</p>
+      <p>{eatery.fields.imageURL}</p>
     </div>
+  
   );
 }
 
