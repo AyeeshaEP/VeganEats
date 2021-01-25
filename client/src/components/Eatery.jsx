@@ -24,13 +24,13 @@ function Eatery(props) {
     
  console.log(eatery)
   return (
-    <div>
+    <div className="show">
       <h4>{eatery.fields.eatery}</h4>
       <h5>
         <em>{eatery.fields.style}</em>
       </h5>
-      <p>{eatery.fields.description}</p>
       <img src = {eatery.fields.imageURL} />
+      <p>{eatery.fields.description}</p>
     </div>
   
   );
