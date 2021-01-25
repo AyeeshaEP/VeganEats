@@ -70,7 +70,7 @@ form label {
 
 form input{
   font-weight: 600;
-  background-color: #D9F3D9;
+  /* background-color: #D9F3D9; */
   color: #35352e;
   transition: all 0.2s;
   border-radius: 18px;

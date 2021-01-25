@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import { baseURL, config } from "../services";
+import { reviewsURL, config } from "../services";
 
 function Form(props) {
   const [eatery, setEatery] = useState('');
@@ -10,25 +10,31 @@ function Form(props) {
   const [author, setAuthor] = useState('');
 
   const handleSubmit = async (e) => {
-    e.preventDefailt();
+    e.preventDefault();
     //make "creature" object
     //"creature" object have all the properties from state
-    const eatery = {
+    const fields = {
       eatery,
       style,
       rating,
       feedback,
       author
     };
+    
     //axios call to POST the new creature which i want to make feedback
-    await axios.post(baseURL, { fields: eatery }, config);
+    await axios.post(reviewsURL, { fields }, config);
     //toggling our GET request
     props.setToggleFetch((prev) => !prev);
+    setEatery('');
+    setStyle('');
+    setRating('');
+    setFeedback('');
+    setAuthor('');
   };
  
   return (
     <form onSubmit={handleSubmit}>
-      <h4>Enter you're fave Oakland Vegan Eatery!</h4>
+      <h4>Enter your fave Oakland Vegan Eatery!</h4>
       <label htmlFor="eatery">Eatery:</label>
       <input
         name="eatery"

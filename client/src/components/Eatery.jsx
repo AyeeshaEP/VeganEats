@@ -30,7 +30,7 @@ function Eatery(props) {
         <em>{eatery.fields.style}</em>
       </h5>
       <p>{eatery.fields.description}</p>
-      <p>{eatery.fields.imageURL}</p>
+      <img src = {eatery.fields.imageURL} />
     </div>
   
   );

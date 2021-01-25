@@ -7,7 +7,7 @@ function Nav(props) {
       <Link to="/">Home</Link>
       <Link to="/list">Dig into the Eats!
       See full list of eateries!</Link>
-      <Link to="/new">Add You're Fave Eatery</Link>
+      <Link to="/new">Add Your Fave Eatery</Link>
     </nav>
 
 
