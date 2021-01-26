@@ -5,7 +5,10 @@ import { baseURL, config } from "./services";
 import Eatery from "./components/Eatery";
 import Form from "./components/Form";
 import Nav from "./components/Nav";
-// import Typeahead from "./components/Typeahead";
+import Main from "./components/Main";
+
+
+
 import './App.css';
 
 function App() {
@@ -42,6 +45,10 @@ function App() {
       <Route path="/eatery/:id">
         <Eatery eateries={eateries} />
       </Route>
+      <Route exact path="/">
+        <Main
+          eateries={eateries}></Main>
+        </Route>
     </div>
   );
 }
