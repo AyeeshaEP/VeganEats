@@ -32,11 +32,12 @@
   text-decoration: none;
   display: flex;
   flex-direction: column;
-  /* background-color: #ffffff; */
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .show-container a {
   text-decoration: none;
-  color: black;
+  font-family: "Permanent Marker";
+  color: whitesmoke;
   width: fit-content;
 }
 select {
@@ -72,6 +73,6 @@ select {
 }
 @media screen and (max-width: 375px) {
   .searchBar {
-    width: 6rem;
+    width: rem;
   }
 }
