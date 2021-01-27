@@ -4,7 +4,7 @@ import axios from "axios";
 import { baseURL, config } from "./services";
 import Eatery from "./components/Eatery";
 import Form from "./components/Form";
-import Nav from "./components/Nav";
+import Nav from "./components/Nav/Nav";
 import Main from "./components/Main";
 
 

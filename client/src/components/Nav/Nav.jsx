@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
+import "./Nav.css";
 
 
 function Nav(props) {
   return (
     <nav>
       <Link to="/">Home</Link>
-      <Link to="/list">Dig into the Eats!
-      See full list of eateries!</Link>
-      <Link to="/new">Add Your Fave Eatery</Link>
+      <Link to="/list">all eateries!</Link>
+      <Link to="/new">New Eatery</Link>
     </nav>
 
 

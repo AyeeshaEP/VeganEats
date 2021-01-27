@@ -11,26 +11,34 @@ function Eatery(props) {
     return (
       <div>
         <h4>Loading..</h4>
-        {/* or history something cool */}
-      </div>
+         </div>
     )
   }
   
-  let feedback = '';
+  // let feedback = '';
 
-  for (let i = 0; i < eatery.fields.feedback; i++) {
-    feedback += ""
+  // for (let i = 0; i < eatery.fields.feedback; i++) {
+  //   feedback += ""
+  // }
+  let rating = "";
+  for (let i = 0; i < eatery.fields.rating; i++) {
+    rating += "⭐️"
   }
-    
- console.log(eatery)
+
+
+ 
   return (
     <div className="show">
       <h4>{eatery.fields.eatery}</h4>
       <h5>
-        <em>{eatery.fields.style}</em>
+        
+        <em>Style: {eatery.fields.style}</em>
       </h5>
-      <img src = {eatery.fields.imageURL} />
+      <img className="foodImage"src={eatery.fields.imageURL} />
+      <p>{rating}</p>
+      <h3>Review</h3>
       <p>{eatery.fields.description}</p>
+      
     </div>
   
   );

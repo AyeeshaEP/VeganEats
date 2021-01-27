@@ -8,7 +8,6 @@ function Typeahead(props) {
   const [name, setName] = useState("");
   const [category, setCategory] = useState("eatery");
   // const [recordings, setRecordings] = useState("");
-  console.log(category);
   useEffect(() => {
     const lastCategory = localStorage.getItem("category") || "eatery";
     setCategory(lastCategory);
@@ -27,19 +26,21 @@ function Typeahead(props) {
         .toLowerCase()
         .includes(name.toLowerCase())
   );
-  console.log(filteredItems);
   const categories = [
     "eatery",
     "style",
   ];
   return (
+    <div className="searchForm">
     <form className="typeahead">
-      <input value={name} onChange={(e) => setName(e.target.value)} />
+      <input value={name} className="searchBar" onChange={(e) => setName(e.target.value)} />
       <select value={category} onChange={(e) => setCategory(e.target.value)}>
         {categories.map((cat) => (
           <option value={cat}>{cat}</option>
         ))}
       </select>
+      </form>
+    <div>
       {name && (
         <div className="show-container">
           {filteredItems.map((item, index) => (
@@ -49,7 +50,8 @@ function Typeahead(props) {
           ))}
         </div>
       )}
-    </form>
+      </div>
+   </div>
   );
 }
 export default Typeahead;

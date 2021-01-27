@@ -1,49 +1,12 @@
-
-
 body {
-  /* background-image:url("https://images.unsplash.com/photo-1471286274405-579f8d7132d8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"); */
-  background-image:url("https://images.unsplash.com/photo-1501453301373-6ce77ab25fa8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+  background-image: url("https://images.unsplash.com/photo-1501453301373-6ce77ab25fa8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
   background-repeat: no-repeat;
   background-size: cover;
-  
-}
-
-
-
-
-nav {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 50px;
-  margin: 20px;
+  background-clip: border-box;
+  background-position: bottom;
   width: 100vw;
-  ;
+  height: 100vh;
 }
-
-nav a,
-main a {
-  font-family: "Permanent Marker";
-  text-decoration: none;
-  transition: all 0.2s;
-  font-family: "playfair Display";
-  font-weight: 900;
-  color: #1c1111;
-
-}
-
-nav a:hover,
-main a:hover {
-  text-shadow: 3px 3px 6px #D9F3D9;
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
-
-}
-
-
-
-
-
 
 main,
 form {
@@ -56,60 +19,58 @@ form {
   align-items: center;
 }
 
-form label, 
-form input, 
+form label,
+form input,
 form button {
   margin: 5px 0;
-  font-family: "Montserrat";
+  font-family: "Shadows Into Light";
 }
 
-form input:focus, 
+form input:focus,
 form button:focus {
   outline: 1px solid #35352e;
 }
 
 form h4 {
-  font-family: "Playfair Display";
+  font-family: "Shadows Into Light";
   font-weight: 700;
   font-style: italic;
   color: #35352e;
   justify-content: center;
-} 
+}
 
 form label {
   color: #1c1111;
   font-weight: 600;
-  /* text-shadow: 3px 3px 6px #E929BA; */
 }
 
-form input{
+.newForm {
   font-weight: 600;
-  /* background-color: #D9F3D9; */
+
   color: #35352e;
   transition: all 0.2s;
   border-radius: 18px;
-  padding: 20px; 
+  padding: 20px;
   width: 200px;
-  height: 15px;   
+  height: 15px;
 }
 
 form button:hover {
   display: flex;
   justify-content: center;
   color: #35352e;
-  background-color: #D9F3D9;
-  
+  background-color: #d9f3d9;
 }
 
 .eatery h4 {
-  font-family: "Playfair Display";
-  color:#35352e;
+  font-family: "Shadows Into Light";
+  color: #35352e;
   margin: 5px;
   padding: 0;
 }
 
 .eatery h4 {
-  display:flex;
+  display: flex;
   justify-content: center;
   font-size: 36px;
 }
@@ -119,28 +80,23 @@ form button:hover {
 }
 
 .eatery h5 em:before {
-  content: "- "; 
+  content: "- ";
 }
 
-.show { 
-display: flex;
-flex-direction: column;
-align-items: center;
-margin: 30px;
-  background-color: transparent;
-  
+.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 30px 0px 30px;
+
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-
-
-
-.show img{
-  border-radius: 50%;
-
+.show img {
+  max-width: 500px;
+  max-height: 375px;
+  border-radius: 25%;
 }
-.show img:hover
-{
-  width: 500px;
-  border-radius: 25%; 
 
+@media screen and (max-width: 500px) {
 }

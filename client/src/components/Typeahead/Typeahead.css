@@ -5,19 +5,20 @@
   position: absolute;
   top: 15px;
   right: 0;
-  background-color: #fffaf0;
-  border: 1px solid #fffaf0;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
   width: 300px;
   height: 100px;
   padding: 2px 10px;
-  color: #432818;
+  color: black;
   text-decoration: none;
 }
+
 .typeahead div p {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-style: italic;
-  color: #fffaf0;
+  color: #ffffff;
   border-bottom: 1px solid tranparent;
   transition: all 0.2s ease-in-out;
   width: fit-content;
@@ -26,27 +27,51 @@
   border-bottom: 1px solid currentColor;
 }
 .show-container {
-  font-family: 'Libre Baskerville', serif;
-  color: #432818;
+  font-family: "Libre Baskerville", serif;
+  color: black;
   text-decoration: none;
   display: flex;
   flex-direction: column;
-  background-color: #fffaf0;
+  /* background-color: #ffffff; */
 }
 .show-container a {
   text-decoration: none;
-  color: #432818;
+  color: black;
   width: fit-content;
 }
 select {
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 0.2s;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 14px;
   font-weight: 900;
-  background-color: #fffaf0;
-  color: #432818;
+  /* background-color: #ffffff; */
+  color: black;
   width: 40vw;
   box-sizing: border-box;
+}
+
+.searchForm {
+  margin-top: 250px;
+}
+
+.searchBar {
+  font-weight: 600;
+  color: #35352e;
+  transition: all 0.2s;
+  border-radius: 18px;
+  padding: 20px;
+  width: 20rem;
+  height: 15px;
+}
+@media screen and (max-width: 700px) {
+  .searchBar {
+    width: 13rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .searchBar {
+    width: 6rem;
+  }
 }

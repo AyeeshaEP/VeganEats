@@ -11,8 +11,6 @@ function Form(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    //make "creature" object
-    //"creature" object have all the properties from state
     const fields = {
       eatery,
       style,
@@ -21,7 +19,7 @@ function Form(props) {
       author
     };
     
-    //axios call to POST the new creature which i want to make feedback
+    //axios call to POST the new eatery which i want to make feedback
     await axios.post(reviewsURL, { fields }, config);
     //toggling our GET request
     props.setToggleFetch((prev) => !prev);
@@ -38,7 +36,8 @@ function Form(props) {
       <label htmlFor="eatery">Eatery:</label>
       <input
         name="eatery"
-        type="text"
+        type="text" 
+        className="newForm"
         value={eatery}
       onChange={(e) => setEatery(e.target.value)}
       />
@@ -46,6 +45,7 @@ function Form(props) {
       <input
         name="style"
         type="text"
+        className="newForm"
         value={style}
       onChange={(e) => setStyle(e.target.value)}
       />
@@ -53,6 +53,7 @@ function Form(props) {
       <input
         name="rating"
         type="number"
+        className="newForm"
         min="0"
         max="5"
         value={rating}
@@ -62,6 +63,7 @@ function Form(props) {
       <input
         name="feedback"
         type="text"
+        className="newForm"
         value={feedback}
       onChange={(e) => setFeedback(e.target.value)}
       />
@@ -69,6 +71,7 @@ function Form(props) {
       <input
         name="author"
         type="text"
+        className="newForm"
         value={author}
       onChange={(e) => setAuthor(e.target.value)}
       />
@@ -76,5 +79,5 @@ function Form(props) {
     </form>
   );
 }
-//instead of type "text" change it to number if numbder is needed
+
 export default Form;
